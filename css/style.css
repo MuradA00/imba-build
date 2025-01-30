@@ -3045,18 +3045,19 @@ fieldset {
   .play-blocks__item:hover::before {
     opacity: 1;
   }
+  .play-blocks__item:hover span {
+    color: #fff;
+  }
+  
+}
+@media (any-hover:hover) {
+  .play-blocks__item:hover img {
+    transform: scale(1.5) translateX(-16%) translateY(16%);
+    filter: opacity(0.5) brightness(200%);
+  }
 }
 
 
-
-.play-blocks__item:hover span {
-  color: #fff;
-}
-
-.play-blocks__item:hover img {
-  transform: scale(1.5) translateX(-16%) translateY(16%);
-  filter: opacity(0.5) brightness(200%);
-}
 
 .play-blocks__item::before {
   height: 230px;
